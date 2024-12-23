@@ -47,6 +47,9 @@ endfunction
 
 let s:warned = 0
 function! s:bash()
+    " TNEGRI: This does not work on Windows / MSYS64 / MINGW / ZSH
+    return ''
+
   if exists('s:bash')
     return s:bash
   endif
